@@ -1,0 +1,556 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Win 10</title>
+    <link rel="stylesheet" href="CSS/Styling.css">
+    <link rel="stylesheet" href="CSS/games_styles.css">
+    <!-- font awesome link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <script src="js/main.js" defer></script>
+    <script src="js/games.js" defer></script>
+
+</head>
+
+<body>
+
+
+    <!-- Opening Windows -->
+    <div class="windows_opening">
+        <div class="win_logo">
+            <img src="./Images/win_logo.png" alt="">
+        </div>
+        <div class="win_animation">
+            <img src="./Images/win_animation.gif" alt="">
+        </div>
+    </div>
+    <!-- Desktop Icons -->
+    <section class="desk">
+        <div id="iconPC" class="icon active" ondblclick="open_thisPC()"><img src="./Images/Desktop Icons/thisPC.png"
+                alt=""><span>This PC</span>
+        </div>
+        <div id="iconNetwork" class="icon"><img src="./Images/Desktop Icons/network.png" alt=""><span>Network</span>
+        </div>
+        <div id="iconRecycle" class="icon"><img src="./Images/Desktop Icons/recycle.png" alt=""><span>Recycle Bin</span>
+        </div>
+        <div id="iconFolder" class="icon"><img src="./Images/Desktop Icons/folder.png" alt=""><span>New Folder</span>
+        </div>
+        <div id="iconControl" class="icon"><img src="./Images/Desktop Icons/control.png" alt=""><span>Control
+                Panal</span>
+        </div>
+        <div id="iconChrome" class="icon" ondblclick="open_chrome(this)"><img src="./Images/Desktop Icons/chrome.png"
+                alt=""><span>Google Chrome</span>
+        </div>
+    </section>
+
+
+    <div id="thisPC" class="App Open_window this_pc">
+
+        <div class="top_bar">
+            <i class="fa-solid fa-computer"></i>
+            This Pc
+            <span id="close" class="close"><i class="fa-solid fa-xmark"></i></span>
+        </div>
+
+        <div class="window">
+
+            <div class="header">
+                <div class="first">
+                    <span>File</span>
+                    <span>Computer</span>
+                    <span>View</span>
+                </div>
+
+                <div class="second">
+                    <span>
+                        <i class="fa-solid fa-arrow-left"></i>
+                    </span>
+                    <span>
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </span>
+                    <span>
+                        <i class="fa-solid fa-sort-down"></i>
+                    </span>
+                    <span>
+                        <i class="fa-solid fa-arrow-up"></i>
+                    </span>
+                    <div class="input_filed">
+                        <span class="inputIcon _1">
+                            <i class="fa-solid fa-computer"></i>
+                        </span>
+                        <input type="text" value="This PC">
+                        <span class="inputIcon">
+                            <i class="fa-solid fa-angle-down"></i>
+                        </span>
+                        <span class="inputIcon _2">
+                            <i class="fa-solid fa-arrow-right-rotate fa-rotate-270"></i>
+                        </span>
+
+                        <span id="search" class="inputIcon _1">
+                            <i class="fa-solid fa-search"></i>
+                        </span>
+                        <input class="search" type="text" placeholder="Search...  ">
+                    </div>
+
+
+                </div>
+
+            </div>
+
+            <div class="right_List">
+
+                <ul><span class="headIcon"><i class="fa-solid fa-splotch" style="color: gold;"></i>Quick access</span>
+                    <li><i class="fa-solid fa-clapperboard" style="color: rgb(131, 199, 255);"></i><span> Desktop</span>
+                    </li>
+                    <li><i class="fa-solid fa-arrow-down" style="color: rgb(56, 142, 255);"></i>
+                        <span>Downloads</span>
+                    </li>
+                    <li><i class="fa-solid fa-file-lines" style="color: rgb(216, 248, 255);"></i> <span>Documents</span>
+                    </li>
+                </ul>
+                <br>
+                <br>
+                <ul><span class="headIcon"><i class="fa-solid fa-desktop" style="color: rgb(0, 157, 255);"></i>This
+                        PC</span>
+                    <li><i class="fa-solid fa-clapperboard" style="color: rgb(131, 199, 255);"></i><span> Desktop</span>
+                    </li>
+                    <li><i class="fa-solid fa-arrow-down" style="color: rgb(56, 142, 255);"></i>
+                        <span>Downloads</span>
+                    </li>
+                    <li><i class="fa-solid fa-file-lines" style="color: rgb(216, 248, 255);"></i> <span>Documents</span>
+                    </li>
+                    <li><i class="fa-solid fa-inbox" style="color: #00bbf2;"></i> <span>Local Disk (C:)</span>
+                    </li>
+                </ul>
+
+                <br>
+                <ul><span class="headIcon"><i class="fa-solid fa-network-wired" style="color: rgb(167, 221, 255);"></i>.
+                        Network</span>
+                </ul>
+
+            </div>
+
+            <div class="pc_folders">
+                <div class="nameLine">
+                    <span> Folders (5)</span>
+                    <hr>
+                </div>
+                <div class="document icon_section">
+
+                    <div class="doc_ico icon">
+                        <img src="./Images/Desktop Icons/folder.png" alt="">
+                        <span>Folder</span>
+                    </div>
+
+                    <div class="doc_ico icon">
+                        <img src="./Images/Desktop Icons/folder.png" alt="">
+                        <span>Folder</span>
+                    </div>
+                    <div class="doc_ico icon">
+                        <img src="./Images/Desktop Icons/folder.png" alt="">
+                        <span>Folder</span>
+                    </div>
+                    <div class="doc_ico icon">
+                        <img src="./Images/Desktop Icons/folder.png" alt="">
+                        <span>Folder</span>
+                    </div>
+                    <div class="doc_ico icon">
+                        <img src="./Images/Desktop Icons/folder.png" alt="">
+                        <span>Folder</span>
+                    </div>
+                    <div class="doc_ico icon">
+                        <img src="./Images/Desktop Icons/folder.png" alt="">
+                        <span>Folder</span>
+                    </div>
+
+                </div>
+                <div class="nameLine">
+                    <span> Devices and drives (1)</span>
+                    <hr>
+                </div>
+
+                <div class="drives icon_section">
+                    <div class="doc_ico icon">
+                        <img src="./Images/Desktop Icons/partition.png" alt="">
+                        <span>Local Disk (C:)</span>
+                    </div>
+
+                </div>
+            </div>
+
+
+        </div>
+
+    </div>
+
+
+    <div id="chrome" class="App Open_window chrome">
+
+        <div class="top_bar">
+            <i class="fa-brands fa-chrome"></i>
+            Chrome
+            <span id="close" class="close"><i class="fa-solid fa-xmark"></i></span>
+        </div>
+
+        <div class="window">
+            <div class="tabs_bar">
+                <div class="tab selected"><i class="fa-brands fa-google"></i> Google <span>
+                        <i class="fa-solid fa-xmark"></i></span></div>
+
+                <div class="tab"><i class="fa-brands fa-youtube" style="color: red;"></i> Youtube <span>
+                        <i class="fa-solid fa-xmark"></i></span></div>
+
+                <div class="tab"><i class="fa-brands fa-facebook-f" style="color: #4bb7ff;"></i> Facebook
+                    <span>
+                        <i class="fa-solid fa-xmark"></i></span>
+                </div>
+
+            </div>
+            <!-- <div class="chrome_tabs"> -->
+
+            <div class="websites">
+                <div class="google_site">
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+    </div>
+    </div>
+
+    </div>
+
+
+
+    <!-- Products -->
+    <section>
+        <!-- Notepad -->
+        <div id="Note" class="App note">
+
+            <div class="top_bar">
+                <i class="fa-solid fa-note-sticky"></i>
+                Untitled - Notepad
+                <span id="close" class="close"><i class="fa-solid fa-xmark"></i></span>
+            </div>
+
+            <textarea name="note" cols="10" rows="10"></textarea>
+        </div>
+
+        <!-- Change Wallpaper and accent color -->
+        <div id="change_wp" class="App change_wp">
+
+            <div class="top_bar">
+                <i class="fa-regular fa-image"></i>
+                Change Wallpaper
+                <span id="close" class="close"><i class="fa-solid fa-xmark"></i></span>
+            </div>
+
+            <div class="image_selector">
+
+
+                <span class="wallPaper" id="default"><img src="./Images/background/default.png" alt=""></span>
+                <span class="wallPaper" id="colorful"><img src="./Images/background/colorful.jpg" alt=""></span>
+                <span class="wallPaper" id="win11white"><img src="./Images/background/win11White.jpg" alt=""></span>
+                <span class="wallPaper" id="win11blue"><img src="./Images/background/win11Blue.jpg" alt=""></span>
+
+                <span class="wallPaper" id="dark"><img src="./Images/background/night.jpg" alt=""></span>
+                <span class="wallPaper" id="dark_pink"><img src="./Images/background/dark_pink.jpg" alt=""></span>
+
+                <span class="wallPaper" id="nature"><img src="./Images/background/nature.jpg" alt=""></span>
+                <span class="wallPaper" id="nature2"><img src="./Images/background/nature2.jpg" alt=""></span>
+                <span class="wallPaper" id="nature3"><img src="./Images/background/nature3.jpg" alt=""></span>
+                <span class="wallPaper" id="nature4"><img src="./Images/background/nature4.jpg" alt=""></span>
+
+                <span class="wallPaper" id="fantasy"><img src="./Images/background/fantasy.jpg" alt=""></span>
+                <span class="wallPaper" id="fantasy2"><img src="./Images/background/fantasy2.jpg" alt=""></span>
+
+                <span class="wallPaper" id="moon1"><img src="./Images/background/moon1.jpg" alt=""></span>
+                <span class="wallPaper" id="moon2"><img src="./Images/background/moon2.jpg" alt=""></span>
+
+                <span class="wallPaper" id="motive1"><img src="./Images/background/motive1.jpg" alt=""></span>
+                <span class="wallPaper" id="motive2"><img src="./Images/background/motive2.jpg" alt=""></span>
+                <span class="wallPaper" id="motive3"><img src="./Images/background/motive3.jpg" alt=""></span>
+                <span class="wallPaper" id="motive4"><img src="./Images/background/motive4.jpg" alt=""></span>
+
+                <span class="wallPaper" id="samurai"><img src="./Images/background/samurai.jpg" alt=""></span>
+
+                <span class="wallPaper" id="space"><img src="./Images/background/space.jpg" alt=""></span>
+                <span class="wallPaper" id="spider1"><img src="./Images/background/spider1.jpg" alt=""></span>
+
+
+
+
+            </div>
+
+
+        </div>
+
+        <!-- Calculator -->
+        <div id="calculator" class="App calculator">
+            <div class="top_bar">
+                <i class="fa-solid fa-calculator"></i>
+                Calculator
+                <span id="close" class="close"><i class="fa-solid fa-xmark"></i></span>
+            </div>
+
+            <div class="calc_body">
+                <div class="screen">0</div>
+                <div class="numbers">
+                    <!-- <span>/</span> -->
+                    <span class="module">%</span>
+                    <span class="clear">CE</span>
+                    <span>/</span>
+                    <span class="delete"><i class="fa-solid fa-delete-left"></i></span>
+                    <span>7</span>
+                    <span>8</span>
+                    <span>9</span>
+                    <span>*</span>
+                    <span>4</span>
+                    <span>5</span>
+                    <span>6</span>
+                    <span>-</span>
+                    <span>1</span>
+                    <span>2</span>
+                    <span>3</span>
+                    <span>+</span>
+                    <span id="clear" class="clear">C</span>
+                    <span>0</span>
+                    <!-- <span>00</span> -->
+                    <span>.</span>
+                    <span class="equal"><i class="fa-solid fa-equals"></i></span>
+                </div>
+
+            </div>
+
+
+        </div>
+
+
+        <!-- To-Do List -->
+        <div id="todo_list" class="App todo_list">
+
+            <div class="top_bar">
+                <i class="fa-solid fa-check"></i>
+                To-Do List
+                <span id="close" class="close"><i class="fa-solid fa-xmark"></i></span>
+            </div>
+
+            <div class="todo_body">
+                <input id="input_text" type="text" placeholder="New Task">
+                <div id="add_task" class="add_new_task">Add</div>
+
+                <div class="tasks">
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!--  Games  -->
+
+    <!-- Whack a mole -->
+    <div id="w_a_m" class="whack_a_mole App">
+        <div class="top_bar">
+            <i class="fa-solid fa-otter"></i>
+            Whack a Mole
+            <span id="close" class="close"><i class="fa-solid fa-xmark"></i></span>
+        </div>
+        <div class="wam_body">
+            <!-- Main menu -->
+
+            <!-- Game -->
+            <div class="wam_game">
+
+                <!-- <div class="hammer"><img src="./Images/games/whack-a-mole/hammer.png" alt=""></div> -->
+                <div class="blocks">
+                    <table>
+
+                        <tbody>
+                            <tr>
+                                <td class="block">
+
+
+                                </td>
+                                <td class="block"></td>
+                                <td class="block"></td>
+                            </tr>
+                            <tr>
+                                <td class="block"></td>
+                                <td class="block">
+
+                                    <!-- <div class="mole">
+                                        <span class="eye"></span>
+                                        <span class="eye"></span>
+                                        <span class="mouth"></span>
+                                    </div> -->
+
+                                </td>
+                                <td class="block"></td>
+                            </tr>
+                            <tr>
+                                <td class="block"></td>
+                                <td class="block"></td>
+                                <td class="block">
+
+                                    <!-- <div class="mole">
+                                        <span class="eye"></span>
+                                        <span class="eye"></span>
+                                        <span class="mouth"></span>
+                                    </div> -->
+
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="wam_score">
+                    <span>0</span>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+    <!-- X-O Game -->
+    <div id="x_o" class="X_O App">
+        <div class="top_bar">
+            <i class="fa-solid fa-o"></i>
+            X-O Game
+            <span id="close" class="close"><i class="fa-solid fa-xmark"></i></span>
+        </div>
+        <div class="x_o_body">
+            <!-- Main menu -->
+
+            <!-- Game -->
+            <div class="x_o_game">
+                <div class="squares">
+
+                    <div class="square"></div>
+                    <div class="square"></div>
+                    <div class="square"></div>
+
+                    <div class="square"></div>
+                    <div class="square"></div>
+                    <div class="square"></div>
+
+                    <div class="square"></div>
+                    <div class="square"></div>
+                    <div class="square"></div>
+
+
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+
+    <!--  start menu-->
+    <div class="start_menu">
+
+        <section>
+            <!-- Programs & Games -->
+            <div class="app_container">
+                <div id="" class="prog">Games</i></div>
+                <div id="mole" class="prog"><i class="fa-solid fa-otter"></i>Whack a Mole</div>
+                <div id="x_o_game" class="prog"><i class="fa-solid fa-o"> </i>X O</div>
+                <div id="" class="prog"><i class="fa-solid fa-plus-circle"> </i>Program</div>
+                <div id="" class="prog"><i class="fa-solid fa-plus-circle"> </i>Games</div>
+                <div id="" class="prog"><i class="fa-solid fa-plus-circle"> </i>Program</div>
+                <div id="" class="prog"><i class="fa-solid fa-plus-circle"> </i>Games</div>
+            </div>
+            <!-- Tiles -->
+            <table>
+                <caption>Productivity</caption>
+                <tbody>
+                    <tr>
+                        <td id="note"><i class="fa-solid fa-note-sticky"></i><br><span>Notes</span></td>
+                        <td id="calc"><i class="fa-solid fa-calculator"></i><br><span>Calculator</span></td>
+                        <td id="task_organize"><i class="fa-solid fa-tasks"></i><br><span>Task Organizer</span></td>
+                    </tr>
+                    <tr>
+                        <td id="darkMode"><i class="fa-solid fa-yin-yang fa-spin"></i></i><br><span>Dark Mode</span>
+                        </td>
+                        <td id="todo"><i class="fa-solid fa-check"></i><br><span>To-Do List</span></td>
+                        <td id="wallpaper"><i class="fa-solid fa-image"></i><br><span>Wallpaper</span></td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <table class="mid-table">
+                <caption>My Social</caption>
+                <tbody>
+                    <tr>
+                        <td id="linked"><a href="#linkedin"><i
+                                    class="fa-brands fa-linkedin"></i><br><span>linked-in</span></a></td>
+                        <td id="mail"><a href="#Gmail"><i class="fa-solid fa-envelope"></i><br><span>G-mail</span></a>
+                        </td>
+                        <td id="telegram"><a href="#telegram"><i
+                                    class="fa-brands fa-telegram"></i><br><span>Telegram</span></a></td>
+                    </tr>
+                    <tr>
+                        <td id="youtube"><a href="#youtube"><i
+                                    class="fa-brands fa-youtube"></i><br><span>Youtube</span></a>
+                        </td>
+                        <td id="whatsapp"><a href="#youtube"><i
+                                    class="fa-brands fa-whatsapp"></i><br><span>Whatsapp</span></a>
+                        </td>
+
+
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+
+        <!-- Power Buttons -->
+
+        <div class="buttons">
+            <div id="bars"><i class="fa-solid fa-bars"></i><span>START</span></div>
+            <div id="user"><i class="fa-solid fa-user"></i><span>User</span></div>
+            <div id="setting"><i class="fa-solid fa-gear"></i><span>Settings</span></div>
+            <div id="power"><i class="fa-solid fa-power-off"></i><span>Power</span></div>
+        </div>
+    </div>
+
+    <!-- Task bar -->
+    <footer>
+        <div class="right">
+            <div class="start_icons">
+                <div id="start"><i class="fa-brands fa-windows"></i></div>
+                <div id="serch"><i class="fa-solid fa-magnifying-glass fa-flip-horizontal"></i></div>
+                <div id="tab"><i class="fa-regular fa-window-restore"></i></div>
+                <div id="file" onclick="open_thisPC()"><i class="fa-solid fa-folder-closed"></i></div>
+                <div id="explor"><i class="fa-brands fa-internet-explorer"></i></div>
+                <div id="start_chrome" onclick="open_chrome(this)"><img src="./Images/Desktop Icons/chrome.png" alt=""
+                        style="width: 57%; margin-top: 10px;">
+                </div>
+            </div>
+
+        </div>
+
+        <div class="left">
+            <div class="lang">ENG</div>
+            <div class="clock_bar">
+                <div id="clock"></div>
+                <div id="date"></div>
+            </div>
+
+        </div>
+    </footer>
+</body>
+
+</html>
